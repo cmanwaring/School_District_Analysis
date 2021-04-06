@@ -10,20 +10,19 @@ After removing the THS 9th graders from the calculations, there was a very sligh
 
 ## Results (before and after excluding the 9th graders scores from THS):
 ### District Summary (Average Math -0.1)
-![district_summary_df](resources/district_summary_df.png)
+![district_summary_df](Resources/district_summary_df.png)
 - **Before:**
   - Average Math: 79.0, Average Reading: 81.9, % Passing Math: 75%, % Passing Reading: 86%, % Passing Overall 65%
 - **After:**
   - Average Math: 78.9, Average Reading: 81.9, % Passing Math: 75%, % Passing Reading: 86%, % Passing Overall 65%
 ###School Summary
-![per_school_summary_df](resources/per_school_summary_df.png)
+![per_school_summary_df](Resources/per_school_summary_df.png)
 - **Thomas High School Before:**
   - Average Math: 83.41, Average Reading: 83.84, % Passing Math: 93%, % Passing Reading: 97%, % Passing Overall 91%
 - **Thomas High School After:**
   - Average Math: 83.35, Average Reading: 83.89, % Passing Math: 93%, % Passing Reading: 97%, % Passing Overall 91%
 
 ### How does replacing 9th grade THS students scores affect:
-Thomas High School remains #2 overall. Excluding the 9th grade class had a neglible inpact on the overall data.
 - **Math and Reading scores per grade:**
   - After removing THS from the 9th grade averages, 9th Grade Math fell from 78.9 to 78.3 and 9th Grade Reading fell from 81.9 to 81.8
 - **Scores by school spending**
