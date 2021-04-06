@@ -4,7 +4,9 @@
 We were given student's grades and tasked with determining the grade averages by school, budget (per student), school size, and school type. I also calculated the average scores by grade class as well. The 9th grade class at THS may have had some faulty scores, so we were asked to calculate new totals while excluding the 9th grade class and analyze any variances in the results.
 
 ### Analysis:
+
 After removing the THS 9th graders from the calculations, there was a very slight decrease in the overall district numbers. Although, the decrease was insignificant enough that it did not impact the calculations after rounding appropriately.
+
 ---
 ## Results
 ### Below are the results before and after removing the 9th graders scores from THS
