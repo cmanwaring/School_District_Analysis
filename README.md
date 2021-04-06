@@ -1,46 +1,44 @@
-# School_District_Analysis
-Analyzing Student Data
 # School District Analysis
 ---
-
-
-Structure, Organization, and Formatting (7 points)
-The written analysis has the following structure, organization, and formatting:
-
-There is a title, and there are multiple sections (2 pt).
-
-Each section has a heading and subheading (3 pt).
-
-Links to images are working, and code is formatted and displayed correctly (2 pt).
-
-Analysis (18 points)
-The written analysis has the following:
-
-Overview of the school district analysis:
-
 ## Overview:
-___
-We were given student's grades and tasked with determining the grade averages by school, budget (per student), school size, and school type. After calculating resultes, we were informed that 9th graders from Thomas Hish School may have had faulty grades, and were asked to exclude that grade-class from that school from the overall analysis, without skewing the results; and to report any potential ramifications resulting from the faulty grades in the 9th-grade class from Thomas Hish School.
+### Objective:
+We were given student's grades and tasked with determining the grade averages by school, budget (per student), school size, and school type. I also calculated the average scores by grade class as well. The 9th grade class at THS may have had some faulty scores, so we were asked to calculate new totals while excluding the 9th grade class and analyze any variances in the results.
 
-### Results:
-7 bulleted lists
+### Analysis:
+After removing the THS 9th graders from the calculations, there was a very slight decrease in the overall district numbers. Although, the decrease was insignificant enough that it did not impact the calculations after rounding appropriately.
+---
+## Results:
+### Below are the results before and after removing the 9th graders scores from THS
+- **District Summary (Average Math -0.1)**
+- ![district_summary_df](resources/district_summary_df.png)
+- - **Before:**
+- - Average Math: 79.0, Average Reading: 81.9, % Passing Math: 75%, % Passing Reading: 86%, % Passing Overall 65%
+- - **After:**
+- - Average Math: 78.9, Average Reading: 81.9, % Passing Math: 75%, % Passing Reading: 86%, % Passing Overall 65%
+- **School Summary**
+- ![per_school_summary_df](resources/per_school_summary_df.png)
+- - **Thomas High School Before:**
+- - Average Math: 83.41, Average Reading: 83.84, % Passing Math: 93%, % Passing Reading: 97%, % Passing Overall 91%
+- - **After:**
+- - Average Math: 83.35, Average Reading: 83.89, % Passing Math: 93%, % Passing Reading: 97%, % Passing Overall 91%
+- **How does replacing 9th grade THS students scores affect:
+- Thomas High School remains #2 overall. Excluding the 9th grade class had a neglible inpact on the overall data.
+- - **Math and Reading scores per grade:**
+- - - After removing THS from the 9th grade averages, 9th Grade Math fell from 78.9 to 78.3 and 9th Grade Reading fell from 81.9 to 81.8
+- - **Scores by school spending**
+- - - There were insignificant decreases in the "$630-$644 (Per Student)" category of school, but the decrease would not have any changes to data when rounded appropriately.
+- - **Scores by school size:**
+- - - THS falls into the "Small" size category (<1750), which once again showed insignificant decreases that would not change the data when rounded appropriately.
+- - **Scores by school type:**
+- - - THS falls into the "Charter" type category, which once again showed insignificant decreases that would not change the data when rounded appropriately.
+---
+## Summary:
+After excluding the 9th graders from THS and running the analyses again, there was a neglible decrease in the overall results. 9th Graders from THS make up 1.2% of the total students analyzed. THS remained #2 for "% Overall Passing", after a .3% decrease when we excluded the 9th grader's scores. Excluding the 9th graders from THS in our analysis gives us accurate numbers that seem to mimic our original data. When we calculated bugedget per student, scores by school spending, and scores by school size; we included the 9th graders so that the population counts would be accurate for THS.
 
-How is the district summary affected?
-After adjusting the 9th graders scores from THS, the Average math score decreased by .1, average reading remained the same, overall % passing math decreased by .2%, overall % passing reading decreased by .3%, and the overall passing decreased by .1%.
-
-How is the school summary affected?
-The school summary was impacted by adjusting the calculations for THS. After adjusting the school summary dataframe to reflect THS while excluding the 9th graders scores:
-
-
-How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
-
-Math and reading scores by grade
-Scores by school spending
-Scores by school size
-Scores by school type
-
-
-There is a bulleted list that addresses how each of the seven school district metrics was affected by the changes in the data (10 pt).
-Summary:
-
-There is a statement summarizing four major changes to the school district analysis after reading and math scores have been replaced (5 pt).
+### Notable:
+If we had included the 9th graders in the counts with NaN for their score (essentially a 0 for these purposes):
+- THS "% Overall Average" decreases from 91% to 65%.
+- THS drops from #2 overall to #8.
+- THS decreases the "$630-$644" Spending Range (Per Student) "% Overall Passing" from 63% to 54%.
+- THS decreases the "Small" school size "% Overall Passing" from 90% to 84%.
+- THS decreases the "Charter" school type from 90% to 87%.
