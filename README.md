@@ -15,7 +15,7 @@ After removing the THS 9th graders from the calculations, there was a very sligh
   - Average Math: 79.0, Average Reading: 81.9, % Passing Math: 75%, % Passing Reading: 86%, % Passing Overall 65%
 - **After:**
   - Average Math: 78.9, Average Reading: 81.9, % Passing Math: 75%, % Passing Reading: 86%, % Passing Overall 65%
-###School Summary
+### School Summary
 ![per_school_summary_df](Resources/per_school_summary_df.png)
 - **Thomas High School Before:**
   - Average Math: 83.41, Average Reading: 83.84, % Passing Math: 93%, % Passing Reading: 97%, % Passing Overall 91%
